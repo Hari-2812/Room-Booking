@@ -1,0 +1,99 @@
+/* 🔥 FILTER SIDEBAR (MODERN CARD) */
+.filter-sidebar {
+  width: 260px;
+  padding: 20px;
+
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+  transition: all 0.3s ease;
+}
+
+/* 🔥 TITLE */
+.filter-sidebar h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+/* 🔥 FILTER GROUP */
+.filter-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* LABEL */
+.filter-group label {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 6px;
+}
+
+/* 🔥 INPUT + SELECT */
+.filter-group input,
+.filter-group select {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+
+  background: #f9fafb;
+
+  font-size: 14px;
+
+  transition: all 0.25s ease;
+}
+
+/* FOCUS */
+.filter-group input:focus,
+.filter-group select:focus {
+  outline: none;
+  border-color: #4f46e5;
+
+  background: white;
+  box-shadow: 0 0 0 2px rgba(79,70,229,0.15);
+}
+
+/* 🔥 RANGE SLIDER */
+.filter-group input[type="range"] {
+  padding: 0;
+  accent-color: #4f46e5;
+}
+
+/* 🔥 APPLY BUTTON */
+.filter-sidebar button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  color: white;
+
+  font-weight: 500;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+/* BUTTON HOVER */
+.filter-sidebar button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(79,70,229,0.3);
+}
+
+/* 🔥 HOVER CARD EFFECT */
+.filter-sidebar:hover {
+  transform: translateY(-4px);
+}
+
+/* 🔥 RESPONSIVE */
+@media (max-width: 1024px) {
+  .filter-sidebar {
+    width: 100%;
+  }
+}

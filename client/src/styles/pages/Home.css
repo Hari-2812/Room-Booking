@@ -1,0 +1,172 @@
+/* 🔥 ROOT */
+:root {
+  --primary: #4f46e5;
+  --text: #111827;
+  --muted: #6b7280;
+  --bg: #ffffff;
+  --section: #f9fafb;
+  --border: #e5e7eb;
+}
+
+/* GLOBAL */
+body {
+  background: var(--bg);
+  font-family: "Poppins", sans-serif;
+  color: var(--text);
+}
+
+.home {
+  overflow-x: hidden;
+}
+
+/* 🔥 HERO */
+.hero {
+  height: 90vh;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("/src/assets/hero.jpg") center/cover no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding: 20px;
+}
+
+/* HERO CONTENT */
+.hero-content {
+  max-width: 700px;
+  color: white;
+}
+
+/* HEADING */
+.hero h1 {
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+/* TEXT */
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #e5e7eb;
+}
+
+/* 🔥 SEARCH BAR */
+.search-bar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  background: white;
+  padding: 14px;
+  border-radius: 12px;
+}
+
+/* INPUT */
+.search-bar input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+/* BUTTON */
+.search-bar button {
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+}
+
+/* 🔥 SECTION */
+.section {
+  padding: 70px 40px;
+  background: var(--section);
+}
+
+/* TITLE */
+.section h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+/* 🔥 GRID */
+.hotel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* 🔥 CARD */
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+
+  border: 1px solid var(--border);
+  transition: 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* IMAGE */
+.card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.card-content {
+  padding: 14px;
+}
+
+.card-content h3 {
+  margin-bottom: 6px;
+}
+
+.card-content p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* 🔥 FEATURES */
+.why {
+  background: white;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  padding: 16px 22px;
+  border-radius: 10px;
+
+  border: 1px solid var(--border);
+  background: white;
+}
+
+/* 🔥 RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .section {
+    padding: 50px 20px;
+  }
+}

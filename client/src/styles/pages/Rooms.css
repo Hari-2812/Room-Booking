@@ -1,0 +1,163 @@
+/* 🔥 PAGE */
+.rooms-page {
+  padding: 70px 50px;
+  background: linear-gradient(to bottom, #f8fafc, #eef2ff);
+  min-height: 100vh;
+}
+
+/* 🔥 TITLE */
+.rooms-page h1 {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 30px;
+
+  background: linear-gradient(90deg, #4f46e5, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: fadeUp 0.6s ease;
+}
+
+/* 🔥 TOP BAR */
+.top-bar {
+  max-width: 1300px;
+  margin: 0 auto 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.top-bar select {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+}
+
+/* 🔥 MAIN LAYOUT (IMPORTANT FIX) */
+.rooms-layout {
+  display: flex;
+  gap: 30px;
+  max-width: 1300px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+/* 🔥 SIDEBAR FIX */
+.filter-sidebar {
+  position: sticky;
+  top: 100px;
+}
+
+/* 🔥 GRID */
+.room-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* 🔥 CARD WRAPPER */
+.room-grid > * {
+  display: flex;
+  animation: fadeUp 0.6s ease;
+}
+
+/* 🔥 ENTRY ANIMATION */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🔥 HOVER GRID EFFECT */
+.room-grid:hover > * {
+  transform: scale(0.98);
+  transition: 0.3s;
+}
+
+.room-grid > *:hover {
+  transform: scale(1);
+}
+
+/* 🔥 EMPTY STATE */
+.empty-state {
+  text-align: center;
+  grid-column: 1 / -1;
+  padding: 50px;
+  color: #6b7280;
+}
+
+/* 🔥 PAGINATION */
+.pagination {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.pagination button {
+  margin: 5px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: none;
+
+  background: #e5e7eb;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pagination button:hover {
+  background: #4f46e5;
+  color: white;
+}
+
+.pagination .active {
+  background: #4f46e5;
+  color: white;
+}
+
+/* 🔥 RESPONSIVE */
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .rooms-page {
+    padding: 50px 20px;
+  }
+
+  .rooms-layout {
+    flex-direction: column;
+  }
+
+  .filter-sidebar {
+    position: static;
+    width: 100%;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .rooms-page h1 {
+    font-size: 26px;
+  }
+
+  .room-grid {
+    gap: 20px;
+  }
+
+  .top-bar {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}

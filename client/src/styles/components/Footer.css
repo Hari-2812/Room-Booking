@@ -1,0 +1,176 @@
+/* 🔥 FOOTER */
+.footer {
+  margin-top: 100px;
+}
+
+/* 🔥 CTA */
+.footer-cta {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.footer-cta h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.footer-cta p {
+  opacity: 0.9;
+  margin-bottom: 25px;
+}
+
+/* INPUT */
+.cta-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+
+  padding: 12px;
+  border-radius: 12px;
+
+  max-width: 420px;
+  margin: auto;
+}
+
+.cta-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+}
+
+.cta-box button {
+  background: white;
+  color: #4f46e5;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* 🔥 MAIN */
+.footer-main {
+  background: #020617;
+  padding: 60px 20px 30px;
+}
+
+/* 🔥 CONTAINER */
+.footer-container {
+  max-width: 1150px;
+  margin: auto;
+}
+
+/* GRID FIX */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+}
+
+/* TEXT */
+.footer-grid h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.footer-grid h4 {
+  color: #94a3b8;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+.footer-grid p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* LINKS */
+.footer-grid a {
+  display: block;
+  margin-bottom: 8px;
+  color: #cbd5f5;
+  font-size: 14px;
+}
+
+.footer-grid a:hover {
+  color: #6366f1;
+}
+
+/* CONTACT */
+.contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+/* SOCIAL */
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #111827;
+
+  color: white;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background: #4f46e5;
+  transform: translateY(-2px);
+}
+
+/* BOTTOM */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+/* 🔥 MOBILE */
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* CLICKABLE TEXT */
+.clickable {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.clickable:hover {
+  color: #6366f1;
+}
+
+/* LINK STYLE */
+.link-click {
+  display: block;
+  margin-bottom: 8px;
+  color: #cbd5f5;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.link-click:hover {
+  color: #6366f1;
+}

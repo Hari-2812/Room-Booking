@@ -1,0 +1,54 @@
+.chart-box {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.chart-header h4 {
+  color: var(--text-light);
+  margin: 0;
+}
+
+.chart-header h2 {
+  margin: 5px 0 15px;
+  color: var(--primary);
+}
+
+.chart-bars {
+  display: flex;
+  align-items: flex-end;
+  height: 120px;
+  gap: 10px;
+}
+
+.bar-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.bar {
+  width: 100%;
+  background: var(--primary);
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.bar:hover {
+  background: var(--primary-dark);
+}
+.bar {
+  animation: growBar 0.6s ease forwards;
+}
+
+@keyframes growBar {
+  from {
+    height: 0;
+  }
+}
+
+/* HOVER GLOW */
+.bar:hover {
+  box-shadow: 0 0 10px rgba(79,70,229,0.6);
+}
